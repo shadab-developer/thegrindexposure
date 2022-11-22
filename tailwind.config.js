@@ -16,7 +16,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-img": "url('/public/assets/hero-img.png')",
+        "hero-img":
+          "url('https://shadab-developer.github.io/thegrindexposure/public//assets/hero-img.png')",
 
         "shape-img":
           "url('https://shadab-developer.github.io/vulgax/assets/img/shape.png')",
