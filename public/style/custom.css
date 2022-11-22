@@ -1,0 +1,9 @@
+.transparent {
+  background: rgb(38, 82, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(38, 82, 140, 0.45) 0%,
+    rgba(38, 82, 140, 0.4514180672268907) 35%,
+    rgba(38, 82, 140, 0.4458158263305322) 100%
+  );
+}
