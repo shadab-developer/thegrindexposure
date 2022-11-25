@@ -2,13 +2,10 @@
 module.exports = {
   content: ["./public/*.html"],
   theme: {
-    fontSize: {
-      xm1: ["10px", "20px"],
-    },
     screen: {
       xm: "320px", //
       sm: "640px", //
-      md: "768px", //
+      md: "768px", // Tablet
       lg: "1024px", // Laptop Size
       xl: "1280px", //
       xll: "1440px", // Laptop Large Size
@@ -16,8 +13,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-img":
-          "url('https://shadab-developer.github.io/thegrindexposure/public//assets/hero-img.png')",
+        "hero-img": "url('/public//assets/hero-img.png')",
 
         "shape-img":
           "url('https://shadab-developer.github.io/vulgax/assets/img/shape.png')",
