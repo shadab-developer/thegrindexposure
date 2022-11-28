@@ -25,11 +25,12 @@ module.exports = {
       colors: {
         white: "#ffffff",
         grey: "#efefef",
-        greyDark: "#d9d9db",
+        greyDark: "#313536",
         springWood: "#f9f0ea",
         black: "#000000",
         blue: "#3765a3",
         orange: "#F27405",
+        yellow: "#F6B360",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
