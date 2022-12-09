@@ -8,7 +8,6 @@ module.exports = {
       md: "768px", // Tablet
       lg: "1024px", // Laptop Size
       xl: "1280px", //
-      xll: "1440px", // Laptop Large Size
       "2xl": "1536px", //
     },
     extend: {
