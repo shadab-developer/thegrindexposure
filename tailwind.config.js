@@ -13,13 +13,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-img": "url('/public/assets/hero-img.png')",
-
-        "shape-img":
-          "url('https://shadab-developer.github.io/vulgax/assets/img/shape.png')",
-
-        "login-reg--bg-img":
-          "url('https://shadab-developer.github.io/vulgax/assets/img/background_login_reg.png')",
+        "hero-img":
+          "url('https://webyroot.github.io/thegrindexposure/public/assets/hero-img.png')",
       },
 
       colors: {
