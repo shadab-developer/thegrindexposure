@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/*.html"],
+
   theme: {
     screen: {
       xm: "320px", //
