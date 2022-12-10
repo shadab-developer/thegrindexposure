@@ -19,8 +19,9 @@
     <meta name="language" content="English" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/custom.css" />
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/datepicker.js"></script>
+
 
 
     <link
@@ -35,14 +36,7 @@
     />
   </head>
   <body>
-    <section class="hero-header">
-      <div class="top-header flex justify-center items-center py-3">
-        <h1 class="font-Montserrat text-sm text-center text-blue font-normal">
-          The GrindExposure Is Free ! Create Your Profile And Fund Your Passion
-          <span class="text-orange font-bold"><button type="button" data-modal-toggle="authentication-modal">Signup Now !</button></span>
-        </h1>
-      </div>
-      <!-- Main modal -->
+     <!-- Main modal -->
 <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
     <div class="relative w-full h-full max-w-md md:h-auto">
         <!-- Modal content -->
@@ -61,15 +55,30 @@
                     </div>
                     <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date Of Birth</label>
-                        <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="John Doe" required>
+                        <div class="relative">
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                              <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+                          </div>
                     </div>
                     <div>
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
-                        <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="John Doe" required>
+                        <label for="Categories" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                        <select id="Categories" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                          <option selected>Choose a country</option>
+                          <option value="US">United States</option>
+                          <option value="CA">Canada</option>
+                          <option value="FR">France</option>
+                          <option value="DE">Germany</option>
+                        </select>
                     </div>
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                         <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                    </div>
+                    <div>
+                        <label for="Username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
+                        <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="johndoe" required>
                     </div>
                     <div>
                         <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
@@ -85,6 +94,14 @@
         </div>
     </div>
 </div>
+    <section class="hero-header">
+      <div class="top-header flex justify-center items-center py-3">
+        <h1 class="font-Montserrat text-sm text-center text-blue font-normal">
+          The GrindExposure Is Free ! Create Your Profile And Fund Your Passion
+          <span class="text-orange font-bold"><button type="button" data-modal-toggle="authentication-modal">Signup Now !</button></span>
+        </h1>
+      </div>
+
       <div
         class="hero-section flex justify-center items-center bg-hero-img h-auto w-full bg-cover bg-center"
       >
@@ -178,31 +195,22 @@ Grow your brand and take advantage of your digital marketing presence and power.
     </section>
 
     <section>
-      <div class="flex flex-col -mt-52 md:mt-0 sm:flex-row justify-evenly">
-        <div
-          class="bg-blue relative px-12 sm:-top-36 md:left-12 w-full h-[40rem] sm:w-1/2 md:w-1/2 pt-20  md:pt-40"
-        >
-          <h1 class="text-2xl sm:text-5xl font-bold text-white">
+      <div class="grid grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:-top-32 w-11/12 mx-auto relative">
+        <div class="content bg-blue relative px-7 pt-24 pb-96 lg:pb-auto lg:pr-28">
+          <h1 class="text-4xl sm:text-5xl font-bold text-white">
             Develop a recurring income stream
+
           </h1>
           <p class="mt-12 text-white">
-           Set your membership prices with weekly, monthly or annual packages.
+            Set your membership prices with weekly, monthly or annual packages.
           </p>
-          <button class="bg-orange text-white px-5 py-3 mt-5"><a href="#faq">Know More</a></button>
         </div>
-        <div class="">
-          <div class="relative w-full flex flex-col sm:none items-center">
-            <img
-              class="w-11/12 md:w-80 lg:w-[30rem] 2xl:w-40 relative h-auto -top-72 md:top-32 sm:-left-12 md:-left-10"
-              src="assets/img2.jpeg"
-              alt="Image 1"
-            />
-
-          </div>
+        <div class="img relative -top-80 lg:top-44 lg:-left-8">
+          <img src="assets/img2.jpeg" class="relative w-11/12 md:w-3/4 lg:w-full mx-auto" alt="">
         </div>
       </div>
     </section>
-    <section>
+    <section class="md:-mt-40 lg:mt-28 ">
       <div class="flex -mt-40 gap-6 px-8 mx-auto justify-between flex-col md:flex-row w-11/12 md:w-11/12 md:px-0  md:mt-0">
         <div class="img mix-blend-overlay md:w-1/2 lg:w-auto relative ">
           <img
@@ -233,7 +241,7 @@ Grow your brand and take advantage of your digital marketing presence and power.
       </div>
     </section>
     <section class="mt-24 md:mt-48">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  w-11/12 mx-auto gap-2 md:flex-row ">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  w-11/12 mx-auto gap-2 md:flex-row ">
 
           <img
             class="w-11/12 md:w-11/12 mx-auto"
@@ -278,7 +286,7 @@ Grow your brand and take advantage of your digital marketing presence and power.
           alt=""
         />
         </div>
-        <div class="steps grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative  md:-top-24 gap-5 px-10 lg:px-0  w-11/12 mx-auto">
+        <div class="steps grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 relative  md:-top-24 gap-5 px-10 lg:px-0  w-11/12 mx-auto">
           <div class="bg-white px-7 py-7  shadow-md" >
             <h3 class="text-2xl mb-3 ">Custom Profile</h3>
             <img src="assets/profile_screenshot.png" alt="Social Profile Screenshot">
