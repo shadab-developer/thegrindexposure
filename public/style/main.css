@@ -804,6 +804,18 @@ video {
   width: auto;
 }
 
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
